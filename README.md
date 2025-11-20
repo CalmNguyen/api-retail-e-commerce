@@ -1,6 +1,7 @@
 🗄️ Database Initialization Guide
 
 Before running the application, you must set up the database.
+Pre-Step: go to appsetting.json and update to your connection string
 
 ✅ 1. Run Database Migrations (RECOMMENDED)
 
