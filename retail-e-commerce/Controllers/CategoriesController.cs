@@ -39,7 +39,7 @@ namespace retail_e_commerce.Controllers
                 return categories;
             }
 
-            var categories = await _cache.GetOrCreateAsync(CacheConstantKey.GET_LIST_CATEGORIES, getAllData, CacheConstant.MINUTE_DEFAULT_CACHE_30_MINUTE, forceReload: isForceReload)
+            var categories = await _cache.GetOrCreateAsync(CacheConstantKey.GET_LIST_CATEGORIES, getAllData, CacheConstant.MINUTE_DEFAULT_CACHE_30_MINUTE, forceReload: isForceReload);
 
             return Ok(categories);
         }
