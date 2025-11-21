@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using retail_e_commerce.AutoMapper;
+using retail_e_commerce.Base;
 using retail_e_commerce.Common;
 using retail_e_commerce.Data;
 using retail_e_commerce.Filters;
@@ -61,6 +62,11 @@ builder.Services.AddCors(option => option.AddPolicy("clientWeb",
         policy.AllowAnyMethod();
         policy.AllowCredentials();
     }));
+builder.Services.AddHttpContextAccessor();
+builder.Services.Configure<CloudflareR2Options>(
+    builder.Configuration.GetSection("CloudflareR2"));
+
+builder.Services.AddScoped<ICloudflareR2Service, CloudflareR2Service>();
 
 var app = builder.Build();
 

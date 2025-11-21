@@ -6,7 +6,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "isForceReload",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[retail_e_commerce.DTOs.Brand.BrandDto, retail-e-commerce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -26,7 +32,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "isForceReload",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[retail_e_commerce.DTOs.Category.CategoryDto, retail-e-commerce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -198,5 +210,25 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "retail_e_commerce.Controllers.UploadController",
+    "Method": "Image",
+    "RelativePath": "api/Upload/Image",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "retail_e_commerce.Controllers.UploadFileResponceCMS",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

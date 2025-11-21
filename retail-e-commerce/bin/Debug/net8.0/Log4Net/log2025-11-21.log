@@ -1,0 +1,121 @@
+{"DateCreated": "2025-11-21 19:56:14,584", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Now listening on: http://localhost:5288, "Exception": "" }
+{"DateCreated": "2025-11-21 19:56:14,667", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Application started. Press Ctrl+C to shut down., "Exception": "" }
+{"DateCreated": "2025-11-21 19:56:14,667", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Hosting environment: Development, "Exception": "" }
+{"DateCreated": "2025-11-21 19:56:14,667", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Content root path: D:\work\DotNet\retail-e-commerce\retail-e-commerce, "Exception": "" }
+{"DateCreated": "2025-11-21 19:57:04,351", "Level": "WARN ", "Logger": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware", "Message": Failed to determine the https port for redirect., "Exception": "" }
+{"DateCreated": "2025-11-21 19:57:19,240", "Level": "ERROR", "Logger": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware", "Message": An unhandled exception has occurred while executing the request., "Exception": "" }
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'Module' with type 'System.Reflection.RuntimeModule'. Path 'ActionDescriptor.MethodInfo.Module.Assembly.EntryPoint'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonConvert.SerializeObjectInternal(Object value, Type type, JsonSerializer jsonSerializer)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value)
+   at retail_e_commerce.Filters.GlobalExceptionFilter.OnException(ExceptionContext context) in D:\work\DotNet\retail-e-commerce\retail-e-commerce\Filters\GlobalExceptionFilter.cs:line 14
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+{"DateCreated": "2025-11-21 19:58:02,838", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Now listening on: http://localhost:5288, "Exception": "" }
+{"DateCreated": "2025-11-21 19:58:02,916", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Application started. Press Ctrl+C to shut down., "Exception": "" }
+{"DateCreated": "2025-11-21 19:58:02,917", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Hosting environment: Development, "Exception": "" }
+{"DateCreated": "2025-11-21 19:58:02,917", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Content root path: D:\work\DotNet\retail-e-commerce\retail-e-commerce, "Exception": "" }
+{"DateCreated": "2025-11-21 19:58:07,573", "Level": "WARN ", "Logger": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware", "Message": Failed to determine the https port for redirect., "Exception": "" }
+{"DateCreated": "2025-11-21 19:58:22,019", "Level": "ERROR", "Logger": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware", "Message": An unhandled exception has occurred while executing the request., "Exception": "" }
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'Module' with type 'System.Reflection.RuntimeModule'. Path 'ActionDescriptor.MethodInfo.Module.Assembly.EntryPoint'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonConvert.SerializeObjectInternal(Object value, Type type, JsonSerializer jsonSerializer)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value)
+   at retail_e_commerce.Filters.GlobalExceptionFilter.OnException(ExceptionContext context) in D:\work\DotNet\retail-e-commerce\retail-e-commerce\Filters\GlobalExceptionFilter.cs:line 14
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+{"DateCreated": "2025-11-21 19:58:26,737", "Level": "ERROR", "Logger": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware", "Message": An unhandled exception has occurred while executing the request., "Exception": "" }
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'Module' with type 'System.Reflection.RuntimeModule'. Path 'ActionDescriptor.MethodInfo.Module.Assembly.EntryPoint'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonConvert.SerializeObjectInternal(Object value, Type type, JsonSerializer jsonSerializer)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value)
+   at retail_e_commerce.Filters.GlobalExceptionFilter.OnException(ExceptionContext context) in D:\work\DotNet\retail-e-commerce\retail-e-commerce\Filters\GlobalExceptionFilter.cs:line 14
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+{"DateCreated": "2025-11-21 19:58:53,238", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Now listening on: http://localhost:5288, "Exception": "" }
+{"DateCreated": "2025-11-21 19:58:53,317", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Application started. Press Ctrl+C to shut down., "Exception": "" }
+{"DateCreated": "2025-11-21 19:58:53,318", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Hosting environment: Development, "Exception": "" }
+{"DateCreated": "2025-11-21 19:58:53,318", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Content root path: D:\work\DotNet\retail-e-commerce\retail-e-commerce, "Exception": "" }
+{"DateCreated": "2025-11-21 19:58:57,281", "Level": "WARN ", "Logger": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware", "Message": Failed to determine the https port for redirect., "Exception": "" }
+{"DateCreated": "2025-11-21 19:59:05,559", "Level": "INFO ", "Logger": "retail_e_commerce.Filters.AuthenticationFilter", "Message": IP: ::1 | {"Req":[],"ReqTime":"2025-11-21T19:59:03.5020837+07:00","Res":{"Value":{"ID":1,"Message":"Success","Data":[{"FileUrl":"https://f5b3aa1fbc2decedf517eb8ef274e0ab.eu.r2.cloudflarestorage.com/cdn/uploads/2025/11/21/870d4c59c6274190a1a0829a49ef71f1.png",...tters":[],"ContentTypes":[],"DeclaredType":"retail_e_commerce.Controllers.UploadFileResponceCMS, retail-e-commerce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","StatusCode":null},"ResTime":"2025-11-21T19:59:05.5097264+07:00","Took":"7ms"}, "Exception": "" }
+{"DateCreated": "2025-11-21 20:00:57,549", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Now listening on: http://localhost:5288, "Exception": "" }
+{"DateCreated": "2025-11-21 20:00:57,638", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Application started. Press Ctrl+C to shut down., "Exception": "" }
+{"DateCreated": "2025-11-21 20:00:57,639", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Hosting environment: Development, "Exception": "" }
+{"DateCreated": "2025-11-21 20:00:57,639", "Level": "INFO ", "Logger": "Microsoft.Hosting.Lifetime", "Message": Content root path: D:\work\DotNet\retail-e-commerce\retail-e-commerce, "Exception": "" }
+{"DateCreated": "2025-11-21 20:01:02,193", "Level": "WARN ", "Logger": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware", "Message": Failed to determine the https port for redirect., "Exception": "" }
+{"DateCreated": "2025-11-21 20:01:03,912", "Level": "INFO ", "Logger": "retail_e_commerce.Filters.AuthenticationFilter", "Message": IP: ::1 | {"Req":[],"ReqTime":"2025-11-21T20:01:02.2306711+07:00","Res":{"Value":{"ID":1,"Message":"Success","Data":[{"FileUrl":"https://pub-6fb1f04620f84526a2de923c2e4ef731.r2.dev/uploads/2025/11/21/4459f5926d6c49678a4561df0b76406a.png","FileName":"4459f5926...ers":[],"ContentTypes":[],"DeclaredType":"retail_e_commerce.Controllers.UploadFileResponceCMS, retail-e-commerce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","StatusCode":null},"ResTime":"2025-11-21T20:01:03.8451911+07:00","Took":"614ms"}, "Exception": "" }

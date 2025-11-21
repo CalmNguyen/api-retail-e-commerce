@@ -174,3 +174,8 @@ D:\work\DotNet\retail-e-commerce\retail-e-commerce\obj\Debug\net8.0\refint\retai
 D:\work\DotNet\retail-e-commerce\retail-e-commerce\obj\Debug\net8.0\retail-e-commerce.pdb
 D:\work\DotNet\retail-e-commerce\retail-e-commerce\obj\Debug\net8.0\retail-e-commerce.genruntimeconfig.cache
 D:\work\DotNet\retail-e-commerce\retail-e-commerce\obj\Debug\net8.0\ref\retail-e-commerce.dll
+D:\work\DotNet\retail-e-commerce\retail-e-commerce\bin\Debug\net8.0\CommunityToolkit.HighPerformance.dll
+D:\work\DotNet\retail-e-commerce\retail-e-commerce\bin\Debug\net8.0\Minio.dll
+D:\work\DotNet\retail-e-commerce\retail-e-commerce\bin\Debug\net8.0\System.IO.Hashing.dll
+D:\work\DotNet\retail-e-commerce\retail-e-commerce\bin\Debug\net8.0\System.Reactive.dll
+D:\work\DotNet\retail-e-commerce\retail-e-commerce\obj\Debug\net8.0\retail-e-commerce.sourcelink.json
